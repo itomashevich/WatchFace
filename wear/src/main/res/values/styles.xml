@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Циферблат -->
+    <style name="clockFace">
+        <!-- Подложка циферблата -->
+        <item name="android:background">@drawable/background</item>
+    </style>
+
+    <!-- Общие настройки для всех показателей -->
+    <style name="all_digits">
+        <!-- Ширина -->
+        <item name="android:layout_width">24dp</item>
+        <!-- Высота -->
+        <item name="android:layout_height">36dp</item>
+        <!-- Привязки -->
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+
+    <!-- Часы (позиция "десятки") -->
+    <style name="hour_x10" parent="all_digits">
+        <item name="android:layout_marginStart">28dp</item>
+    </style>
+
+    <!-- Часы (позиция "единицы") -->
+    <style name="hour_x1" parent="all_digits">
+        <item name="android:layout_marginStart">56dp</item>
+    </style>
+
+    <!-- Минуты (позиция "десятки") -->
+    <style name="minute_x10" parent="all_digits">
+        <item name="android:layout_marginStart">108dp</item>
+    </style>
+
+    <!-- Минуты (позиция "единицы") -->
+    <style name="minute_x1" parent="all_digits">
+        <item name="android:layout_marginStart">136dp</item>
+    </style>
+
+    <!-- Общие настройки для всех показателей для круглого дисплея -->
+    <style name="all_digits_round">
+        <!-- Ширина -->
+        <item name="android:layout_width">30dp</item>
+        <!-- Высота -->
+        <item name="android:layout_height">45dp</item>
+        <!-- Привязки -->
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+
+    <!-- Часы (позиция "десятки") для круглого дисплея -->
+    <style name="round_hour_x10" parent="all_digits_round">
+        <item name="android:layout_marginStart">34dp</item>
+    </style>
+
+    <!-- Часы (позиция "единицы") для круглого дисплея -->
+    <style name="round_hour_x1" parent="all_digits_round">
+        <item name="android:layout_marginStart">64dp</item>
+    </style>
+
+    <!-- Минуты (позиция "десятки") для круглого дисплея -->
+    <style name="round_minute_x10" parent="all_digits_round">
+        <item name="android:layout_marginStart">122dp</item>
+    </style>
+
+    <!-- Минуты (позиция "единицы") для круглого дисплея -->
+    <style name="round_minute_x1" parent="all_digits_round">
+        <item name="android:layout_marginStart">154dp</item>
+    </style>
+
+</resources>
