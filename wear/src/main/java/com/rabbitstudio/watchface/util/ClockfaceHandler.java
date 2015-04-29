@@ -23,14 +23,14 @@ public class ClockfaceHandler {
     }
 
     public void onTimeChanged(WatchFaceTime oldTime, WatchFaceTime curTime){
-        if (curTime.hasHourChanged(oldTime)){
+        if (curTime.hasHourChanged(oldTime) || ivHour_x10.getDrawable()==null || ivHour_x1.getDrawable()==null){
             int hour_x1 = curTime.hour % 10;
             int hour_x10 = curTime.hour / 10;
 
             ivHour_x10.setImageResource(DigitImage.getImageByDigit(hour_x10).getImageId());
             ivHour_x1.setImageResource(DigitImage.getImageByDigit(hour_x1).getImageId());
         }
-        if (curTime.hasMinuteChanged(oldTime)){
+        if (curTime.hasMinuteChanged(oldTime) || ivMinute_x10.getDrawable()==null || ivMinute_x1.getDrawable()==null){
             int minute_x1 = curTime.minute % 10;
             int minute_x10 = curTime.minute / 10;
 

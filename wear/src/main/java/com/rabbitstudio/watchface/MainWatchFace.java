@@ -21,9 +21,8 @@ public class MainWatchFace extends WatchFace {
 
     @Override
     protected void onTimeChanged(WatchFaceTime oldTime, WatchFaceTime newTime) {
-
         clockfaceHandler.onTimeChanged(oldTime, newTime);
-
+        vClockface.invalidate();
         super.onTimeChanged(oldTime, newTime);
     }
 
@@ -42,6 +41,7 @@ public class MainWatchFace extends WatchFace {
             vClockface = inflater.inflate(R.layout.round_clockface, null);
         }
 
+        vClockface.measure(screenBounds.width(), screenBounds.height());
         vClockface.layout(0, 0, screenBounds.width(), screenBounds.height());
 
         clockfaceHandler = new ClockfaceHandler(vClockface);
