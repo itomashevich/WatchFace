@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.rabbitstudio.watchface">
+    package="com.rabbitstudio.watchface.dots">
 
     <uses-sdk android:minSdkVersion="18"
         android:targetSdkVersion="21" />

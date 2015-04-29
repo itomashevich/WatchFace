@@ -8,7 +8,7 @@
     <ImageView
         android:id="@+id/clockface_ivHour_x10"
         android:src="@drawable/digit_1"
-        style="@style/round_hour_x10" />
+        style="@style/round_hour_x10"/>
 
     <ImageView
         android:id="@+id/clockface_ivHour_x1"

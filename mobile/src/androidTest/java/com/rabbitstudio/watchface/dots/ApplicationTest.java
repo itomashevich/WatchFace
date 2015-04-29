@@ -1,4 +1,4 @@
-package com.rabbitstudio.watchface;
+package com.rabbitstudio.watchface.dots;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

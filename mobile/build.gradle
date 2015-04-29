@@ -1,11 +1,18 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        debug {
+            keyAlias 'debug'
+            keyPassword '3698741'
+            storeFile file('D:/android_workspace/SlideUp_Launcher/key_storage/slideupdev')
+            storePassword '1478963'
+        }
+    }
     compileSdkVersion 22
     buildToolsVersion "22.0.0"
-
     defaultConfig {
-        applicationId "com.rabbitstudio.watchface"
+        applicationId "com.rabbitstudio.watchface.dots"
         minSdkVersion 19
         targetSdkVersion 22
         versionCode 1

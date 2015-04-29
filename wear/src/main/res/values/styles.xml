@@ -44,8 +44,7 @@
         <!-- Высота -->
         <item name="android:layout_height">45dp</item>
         <!-- Привязки -->
-        <item name="android:layout_centerVertical">true</item>
-        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_marginTop">82dp</item>
     </style>
 
     <!-- Часы (позиция "десятки") для круглого дисплея -->
